@@ -8,6 +8,7 @@ namespace AlgorithmProgram
         {
             Console.WriteLine("1: For String Permutation");
             Console.WriteLine("2: For Bubble Sort");
+            Console.WriteLine("3: For Insertion Sort");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -22,6 +23,11 @@ namespace AlgorithmProgram
                 case 2:
                     BubbleSort bubbleSort = new BubbleSort();
                     bubbleSort.Bubblesort();
+                    Console.WriteLine();
+                    break;
+                case 3:
+                    InsertionSort insertionSort = new InsertionSort();
+                    insertionSort.Insert();
                     Console.WriteLine();
                     break;
                 default:
