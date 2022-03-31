@@ -7,6 +7,7 @@ namespace AlgorithmProgram
         public static void Main(string[] args)
         {
             Console.WriteLine("1: For String Permutation");
+            Console.WriteLine("2: For Bubble Sort");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -16,6 +17,11 @@ namespace AlgorithmProgram
                     Permutations permutations = new Permutations();
                     permutations.Permute(str, 0, n - 1);
                     permutations.IterationPermutation(str);
+                    Console.WriteLine();
+                    break;
+                case 2:
+                    BubbleSort bubbleSort = new BubbleSort();
+                    bubbleSort.Bubblesort();
                     Console.WriteLine();
                     break;
                 default:
