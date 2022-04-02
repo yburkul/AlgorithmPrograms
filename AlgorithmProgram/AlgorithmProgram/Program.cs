@@ -10,6 +10,7 @@ namespace AlgorithmProgram
             Console.WriteLine("2: For Bubble Sort");
             Console.WriteLine("3: For Insertion Sort");
             Console.WriteLine("4: For Prime Number");
+            Console.WriteLine("5: For Anagram");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -35,6 +36,10 @@ namespace AlgorithmProgram
                     PrimeNumber primeNumber = new PrimeNumber();
                     primeNumber.Primenumber();
                     Console.WriteLine();
+                    break;
+                case 5:
+                    Anagram anagram = new Anagram();
+                    anagram.Anagrams();
                     break;
                 default:
                     Console.WriteLine("Number is Invalid");
